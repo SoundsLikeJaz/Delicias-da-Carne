@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Delícias da Carne</title>
+  <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="bootstrap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="titulo" id="guia">
+      <h1>Delícias da Carne</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="450" height="2" viewBox="0 0 450 2" fill="none">
+        <path d="M0 1H450" stroke="#FFDC24" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="400" height="2" viewBox="0 0 400 2" fill="none">
+        <path d="M0 1H400" stroke="#FF4820" />
+      </svg>
+      <nav>
+        <ul class="header--lista">
+          <li>
+            <a href="#carnesnobres">Carnes Nobres</a>
+          </li>
+
+          <li>
+            <a href="#carnebovina">Carnes Bovinas</a>
+          </li>
+
+          <li>
+            <a href="#carnesdeaves">Carnes de Aves</a>
+          </li>
+
+          <li>
+            <a href="#carnesexoticas">Carnes Exóticas</a>
+          </li>
+
+          <li>
+            <a href="#frutosdomar">Frutos do Mar</a>
+          </li>
+
+          <li>
+            <a href="#orcamento">Faça seu orçamento</a>
+          </li>
+
+          <li>
+            <a href="#quemSomos">Quem somos</a>
+          </li>
+
+          <li>
+            <a href="#adicionais">Informações adicionais</a>
+          </li>
+
+          <li>
+            <a href="#faleconosco">Fale Conosco</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="carrossel ">
+    <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+
+      <ul class="carousel-indicators">
+        <li data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#meuCarrossel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#meuCarrossel" data-bs-slide-to="2"></li>
+      </ul>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imagens/Carrossel/item1.png" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagens/Carrossel/item2.png" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagens/Carrossel/item3.png" alt="Slide 3">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#meuCarrossel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <div class="cardapio">
+      <p class="titulo">Conheça nosso cardápio:</p>
+      <br>
+      <div id="carnesnobres">
+        <p>Carnes Nobres</p>
+        <br>
+        <div class="cardapio--container">
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Nobres/picanha.png" alt="Três pedaços de picanha." title="Picanha">
+            <p>Picanha</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Nobres/prime rib.png" alt="Dois pedaços de prime rib." title="Prime Rib">
+            <p>Prime Rib</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Nobres/carne wagyu.png" alt="Dois pedaços de wagyu." title="Wagyu">
+            <p>Wagyu</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Nobres/chorizo.png" alt="Dois pedaços de chorizo." title="Chorizo">
+            <p>Chorizo</p>
+          </div>
+        </div>
+        <div class="linhaBranca"></div>
+      </div>
+
+      <div id="carnebovina">
+        <p>Carnes Bovina</p>
+        <br>
+        <div class="cardapio--container">
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carne Bovina/bife ancho.png" alt="Um pedaço de bife ancho." title="Bife Ancho">
+            <p>Bife Ancho</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carne Bovina/baby beef.png" alt="Dois pedaços de baby beef" title="Baby Beef">
+            <p>Baby Beef</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carne Bovina/t-bone.png" alt="Um pedaço de costela T-Bone." title="Costela T-Bone">
+            <p>T-Bone</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carne Bovina/maminha.png" alt="Um pedaço de maminha." title="Maminha">
+            <p>Maminha</p>
+          </div>
+        </div>
+        <div class="linhaBranca"></div>
+      </div>
+
+      <div id="carnesdeaves">
+        <p>Carnes de Aves</p>
+        <br>
+        <div class="cardapio--container">
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes de Aves/cortes de pato.png" alt="Um pedaço de carne de pato."
+              title="Cortes de Pato">
+            <p>Cortes de Pato</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes de Aves/codorna europeia.png" alt="Duas codornas européias"
+              title="Codorna Européia">
+            <p>Codorna Européia</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes de Aves/cortes de frango.png" alt="Um frango." title="Cortes de Frango">
+            <p>Cortes de Frango</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes de Aves/cortes de avestruz.png" alt="Um pedaço de carne de avestruz."
+              title="Cortes de avestruz">
+            <p>Cortes de Avestruz</p>
+          </div>
+        </div>
+        <div class="linhaBranca"></div>
+      </div>
+
+      <div id="carnesexoticas">
+        <p>Carnes Exóticas</p>
+        <br>
+        <div class="cardapio--container">
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Exoticas/cortes de coelho.png" alt="Um prdaço de carne de coelho."
+              title="Carne de Coelho">
+            <p>Carne de Coelho</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Exoticas/carne de javali.png" alt="Um pedaço de carne de javali."
+              title="Carne de Javali">
+            <p>Carne de Javali</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Exoticas/carne de rã.png" alt="Alguns pedaços de carne de rã." title="Carne de Rã">
+            <p>Carne de Rã</p>
+          </div>
+          <div class="cardapio--container--item">
+            <img src="Imagens/Carnes Exoticas/carne de jacaré.png" alt="Alguns pedaços de carne de jacaré."
+              title="Cortes de Jacaré">
+            <p>Membros de Jacaré</p>
+          </div>
+        </div>
+        <div class="linhaBranca"></div>
+      </div>
+
+      <div id="frutosdomar">
+        <p>Frutos do Mar</p>
+        <br>
+        <div class="cardapio--container">
+          <div class="cardapio--container--item">
+            <img src="Imagens/Frutos do Mar/frutos do mar.png" alt="Nossa coleção de frutos do mar."
+              title="Frutos do Mar">
+            <br>
+            <p>Lombo de bacalhau, filé de linguado espanhol, <br>
+              polvo, vieiras, haddock escocês, salmão e camarão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="orcamento">
+      <p class="titulo">Faça seu orçamento!</p>
+      <div class="formulario---orcamento">
+        <div class="formulario---orcamento--dropdown tipo" onclick="revelarTipo()">
+          <p>Tipo de carne</p>
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div class="formulario---orcamento--dropdown dropdown--item">
+          <p onclick="escolherTipo(this)">Nobres</p>
+          <p onclick="escolherTipo(this)">Bovinas</p>
+          <p onclick="escolherTipo(this)">Aves</p>
+          <p onclick="escolherTipo(this)">Exóticas</p>
+          <p onclick="escolherTipo(this)">Frutos do Mar</p>
+        </div>
+        <br>
+        <div class="formulario---orcamento--dropdown corte">
+          <p>Corte</p>
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div class="formulario---orcamento--dropdown dropdown--item">
+
+        </div>
+
+        <div class="formulario--orcamento--radio">
+
+          <div>
+            <div>
+              <div class="radio" onclick="selecPeso(this)">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>0,5 kg</p>
+            </div>
+            <div>
+              <div class="radio" onclick="selecPeso(this)">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>1 kg</p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div class="radio" onclick="selecPeso(this)">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>2 kg</p>
+            </div>
+            <div>
+              <div class="radio" onclick="selecPeso(this)">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>3 kg</p>
+            </div>
+          </div>
+
+          <div class="formulario--orcamento--radio--personalizado">
+            <div>
+              <div class="radio" onclick="selecPeso(this)">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>Personalizado</p>
+            </div>
+            <div class="radio--input formulario--orcamento--radio--personalizado">
+              <input type="number" id="precoPersonalizado" min="0.001"> kg
+            </div>
+          </div>
+        </div>
+
+        <div class="formulario--orcamento--resultado">
+          <p>R$ <span id="preco">Preço</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="quemSomos">
+      <p class="titulo">Quem somos?</p>
+      <p class="quemSomos--lema">
+        Nós comemos, bebemos, cozinhamos, viajamos para <br>
+        descobrir novos sabores e conversamos sobre novos sabores. Nós <br>
+        acreditamos que comer é uma das grandes maravilhas da vida. Delícias da Carne: <br>
+        Há quarenta anos comercializando produtos de qualidade, cortes Uruguaios e <br>
+        Argentinos, filé de peixes, haddock Escocês, <br>
+        vieiras importadadas e tentáculos. <br>
+        O MELHOR RESTAURANTE É A NOSSA CASA! <br>
+        -Delícias da Carne.
+      </p>
+    </div>
+  </main>
+
+  <div id="contato">
+
+    <div id="adicionais">
+      <p class="titulo">Informações adicionais:</p>
+      <div class="informacoes">
+        <div>
+          <h2 class="informacoes--subtitulo">Funcionamento:</h2>
+          <p>
+            Segunda à sexta <br>
+            das 7h às 19h. <br>
+            Sábados das <br>
+            7h às 15h. <br>
+          </p>
+        </div>
+
+        <div>
+          <h2 class="informacoes--subtitulo">Endereço:</h2>
+          <p>
+            Rua Voluntários <br>
+            da Pátria, 340 <br>
+            loja F - Botafogo - Rio <br>
+            de Janeiro - RJ
+          </p>
+        </div>
+
+        <div>
+          <h2 class="informacoes--subtitulo">Contato:</h2>
+          <p>
+            <i class="fa-solid fa-phone"></i> (21) 2527-7125 <br>
+            <i class="fa-brands fa-whatsapp"></i> (21) 97213-0412 <br>
+            <i class="fa-brands fa-whatsapp"></i> (21) 99908-4435 <br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="faleconosco">
+      <h2 class="titulo">Fale conosco!</h2>
+      <p>
+        Preencha o formulário ou envie sua mensagem diretamente para o email: <br>
+        deliciasdacarne@gmail.com
+      </p>
+
+      <div class="formulario--faleconosco">
+
+        <div class="formulario--faleconosco--inputs">
+          <div class="formulario--faleconosco--inputs--itens">
+            <input type="text" placeholder="Nome" id="nome">
+          </div>
+          <div class="formulario--faleconosco--inputs--itens">
+            <input type="email" placeholder="Email" id="email">
+          </div>
+          <div class="formulario--faleconosco--inputs--itens">
+            <input type="tel" placeholder="Telefone" id="tel">
+          </div>
+        </div>
+
+        <div class="formulario--faleconosco--radio">
+          <div class="formulario--faleconosco--radio--label">Preferência:</div>
+          <div class="formulario--faleconosco--radio--itens" onclick="selecionaRadio(this)">Carnes exóticas</div>
+          <div class="formulario--faleconosco--radio--itens" onclick="selecionaRadio(this)">Carnes tradicionais</div>
+          <div class="formulario--faleconosco--radio--itens" onclick="selecionaRadio(this)">Ambas</div>
+        </div>
+
+
+        <div class="formulario--faleconosco--dropdown--pai">
+          <div class="formulario--faleconosco--dropdown" onclick="revelar()">
+            <p>Tipo de carne favorita</p>
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+          <div class="dropdown">
+            <p onclick="escolher(this)">Nobre</p>
+            <p onclick="escolher(this)">Bovina</p>
+            <p onclick="escolher(this)">Aves</p>
+            <p onclick="escolher(this)">Exótica</p>
+            <p onclick="escolher(this)">Frutos do Mar</p>
+            <p onclick="escolher(this)">Outra</p>
+          </div>
+        </div>
+
+
+        <div class="formulario--faleconosco--resposta">
+          <p>Receber resposta por:</p>
+          <div class="formulario--faleconosco--resposta--pai">
+            <div class="resposta--item">
+              <div class="resposta" onclick="marcarCheckbox(this)">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <p>Email</p>
+            </div>
+            <div class="resposta--item">
+              <div class="resposta" onclick="marcarCheckbox(this)">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <p>SMS</p>
+            </div>
+            <div class="resposta--item">
+              <div class="resposta" onclick="marcar()">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <p>Ambos</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="formulario--faleconosco--textarea">
+          <textarea id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+        </div>
+
+        <div class="formulario--faleconosco--button">
+          <button onclick="enviar()">Enviar</button>
+        </div>
+        <div class="validacao">
+          <p id="resultado" class="resultado-aprovado"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2023 Jackson Silva & Sophia Ramos, todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>

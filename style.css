@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Coustard:wght@400;900&family=Crimson+Pro&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+#guia {
+  position: fixed;
+  margin-top: 0px;
+  height: 120px;
+  z-index: 5;
+}
+
+.titulo {
+  font-family: 'Coustard', serif;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+header .titulo {
+  width: 100vw;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header div h1 {
+  color: #FFF;
+  font-family: 'Bitter', serif;
+  font-size: 42px;
+}
+
+svg {
+  margin: 5px 0 5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--lista {
+  list-style: none;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  gap: 30px;
+  margin: 10px 0 10px;
+}
+
+.header--lista li a {
+  color: white;
+  text-decoration-line: none;
+}
+
+.header--lista li a:hover {
+  text-decoration-line: underline;
+}
+
+.header--lista li {
+  cursor: pointer;
+}
+
+.carrossel {
+  margin-top: 120px;
+}
+
+.carrossel ul {
+  list-style: none;
+}
+
+.carrossel button {
+  height: auto;
+}
+
+.carrossel img {
+  width: 100%;
+}
+
+main {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cardapio {
+  width: 95vw;
+  border-radius: 25px;
+  background: #FF5A36;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Coustard', serif;
+}
+
+main .cardapio div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .cardapio div p {
+  color: #FFF;
+  font-family: 'Coustard', serif;
+  font-size: 28px;
+}
+
+.cardapio div .cardapio--container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.cardapio--container--item {
+  width: 25%;
+}
+
+.cardapio #frutosdomar {
+  justify-content: center;
+}
+
+.cardapio #frutosdomar .cardapio--container {
+  justify-content: space-around;
+}
+
+.cardapio #frutosdomar .cardapio--container--item {
+  justify-self: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cardapio #frutosdomar .cardapio--container--item img {
+  width: 70%;
+  height: 345.77px;
+  border-radius: 20px;
+  max-width: none;
+}
+
+.cardapio #frutosdomar .cardapio--container--item p {
+  width: 734px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: 'Crimson Pro', serif;
+}
+
+.cardapio div .cardapio--container img {
+  width: 253px;
+  min-width: 70%;
+  max-width: 90%;
+  height: 211.9px;
+  border-radius: 15px;
+}
+
+.cardapio div .cardapio--container p {
+  font-size: 22px;
+}
+
+.linhaBranca {
+  border: 1px solid white;
+  width: 97.2550158394%;
+  height: 1px;
+  margin: 30px 0 30px;
+}
+
+#orcamento {
+  border-radius: 25px;
+  background: #FFD704;
+  width: 95vw;
+  color: #000;
+  text-align: center;
+  font-family: 'Coustard', serif;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#orcamento .titulo {
+  margin-bottom: 30px;
+}
+
+.formulario---orcamento {
+  width: 45%;
+  position: relative;
+}
+
+.formulario---orcamento--dropdown {
+  height: 50px;
+  border-radius: 25px;
+  background: #EEE;
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-family: 'Coustard', serif;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.formulario---orcamento--dropdown p {
+  width: 100%;
+  margin: 0;
+}
+
+.formulario---orcamento--dropdown i {
+  position: absolute;
+  padding-left: 90%;
+}
+
+.dropdown--item {
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: auto;
+  flex-direction: column;
+  cursor: auto;
+  gap: 20px;
+  z-index: 2;
+}
+
+.dropdown--item p {
+  width: 40%;
+  cursor: pointer;
+}
+
+.dropdown--item p:hover {
+  color: #FF5A36;
+  text-decoration: underline;
+}
+
+.formulario--orcamento--radio {
+  margin-top: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario--orcamento--radio div {
+  display: flex;
+  gap: 25px;
+  font-weight: 300;
+  flex-direction: column;
+}
+
+.formulario--orcamento--radio div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.radio {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #EEE;
+  color: transparent;
+  cursor: pointer;
+}
+
+.radio--input {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #EEE;
+  color: transparent;
+}
+
+.formulario--orcamento--radio--personalizado {
+  font-size: 18px;
+  color: black;
+  width: 182px;
+}
+
+.formulario--orcamento--radio--personalizado input {
+  height: 100%;
+  width: 70%;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+}
+
+.formulario--orcamento--radio--personalizado input:focus {
+  outline: none;
+}
+
+.formulario--orcamento--resultado {
+  margin: 50px 0 30px;
+  height: 50px;
+  border-radius: 25px;
+  background: #EEE;
+  display: flex;
+  align-items: center;
+}
+
+.formulario--orcamento--resultado p {
+  text-align: center;
+  font-family: 'Coustard', serif;
+  font-size: 24px;
+  color: #000;
+  width: 100%;
+  margin: 0;
+}
+
+#quemSomos {
+  width: 95vw;
+  border-radius: 25px;
+  background: #FF5A36;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Coustard', serif;
+}
+
+.quemSomos--lema {
+  font-size: 20px;
+  margin: 15px 0 15px;
+}
+
+#contato {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#adicionais {
+  border-radius: 25px;
+  background: #FFD704;
+  width: 95vw;
+  color: #000;
+  text-align: center;
+  font-family: 'Coustard', serif;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacoes {
+  margin: 30px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.informacoes div {
+  text-align: left;
+}
+
+.informacoes .informacoes--subtitulo {
+  color: #000;
+  text-align: left;
+  font-family: 'Coustard', serif;
+  font-size: 30px;
+}
+
+.informacoes p {
+  color: #000;
+  font-family: 'Lato', serif;
+  font-size: 24px;
+  margin: 10px 0 50px;
+}
+
+#faleconosco {
+  width: 95vw;
+  border-radius: 25px;
+  background: #FF5A36;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Coustard', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#faleconosco p {
+  font-size: 20px;
+  margin: 10px 0 15px;
+}
+
+.formulario--faleconosco {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 50px;
+  width: 45vw;
+  gap: 20px;
+}
+
+.formulario--faleconosco--inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario--faleconosco--inputs--itens {
+  height: 44px;
+  border-radius: 25px;
+  background: #000;
+}
+
+.formulario--faleconosco--inputs--itens input {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Lato', serif;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+}
+
+.formulario--faleconosco--inputs--itens input::placeholder {
+  color: #FFF;
+  font-family: 'Lato', serif;
+}
+
+.formulario--faleconosco--radio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario--faleconosco--radio--label,
+.formulario--faleconosco--radio--itens {
+  border-radius: 25px;
+  background: #000;
+  width: 150px;
+  height: 44px;
+  color: #FFF;
+  font-family: 'Lato', serif;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario--faleconosco--radio--itens {
+  cursor: pointer;
+}
+
+.radio-button---active {
+  border: 2px solid yellow;
+  color: yellow;
+  text-shadow: 2px black;
+}
+
+.formulario--faleconosco--dropdown--pai {
+  position: relative;
+}
+
+.formulario--faleconosco--dropdown {
+  height: 44px;
+  border-radius: 25px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Lato', serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dropdown {
+  border-radius: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  background: #000;
+  width: 100%;
+}
+
+.dropdown p {
+  cursor: pointer;
+}
+
+.dropdown p:hover {
+  text-decoration: underline;
+}
+
+.formulario--faleconosco--dropdown p {
+  width: 90%;
+}
+
+.formulario--faleconosco--resposta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario--faleconosco--resposta--pai {
+  display: flex;
+  flex-direction: column;
+}
+
+.resposta--item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 15px;
+}
+
+.resposta {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: transparent;
+  cursor: pointer;
+}
+
+.checkbox-item---selected {
+  color: #FFF;
+}
+
+.formulario--faleconosco--textarea {
+  border-radius: 25px;
+  background-color: #000000;
+}
+
+textarea {
+  background: transparent;
+  width: 90%;
+  height: 150px;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: 'Lato', serif;
+  font-size: 18px;
+}
+
+textarea::placeholder {
+  color: #FFF;
+  margin-left: 50px;
+  font-family: 'Lato', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.formulario--faleconosco--button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  line-height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.resultado-aprovado {
+  color: green;
+}
+
+.resultado-reprovado {
+  color: darkred;
+}
+
+footer {
+  background-color: white;
+  height: 100px;
+}
+
+footer p {
+  color: #000;
+  text-align: center;
+  font-family: 'Lato', serif;
+  font-size: 25px;
+  margin-top: 30px;
+}
