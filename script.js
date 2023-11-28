@@ -2,7 +2,7 @@
 
 const linksAncora = document.querySelectorAll("a");
 linksAncora.forEach(link => {
-  link.addEventListener("click", function(e) {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
     const anchorId = this.getAttribute("href");
     rolar(anchorId);
