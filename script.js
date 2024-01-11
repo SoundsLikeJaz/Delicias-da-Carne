@@ -257,10 +257,8 @@ function escolher(x) {
 }
 
 function marcarCheckbox(x) {
-  for (let i = 0; i < checkbox.length; i++) {
     x.classList.toggle("checkbox-item---selected");
     checar();
-  }
 }
 
 function checar() {
